@@ -1,0 +1,101 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  transition: color 0.3s;
+}
+
+h1:hover {
+  color: #fc0c2c;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="checkbox"]:hover + label,
+label:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(to bottom, #181616, #ea1a1a);
+}
+
+input[type="checkbox"] + label {
+  transition: color 0.3s;
+}
+
+input[type="checkbox"]:hover + label {
+  color: #007bff;
+}
+
+input[type="radio"] + label {
+  transition: color 0.3s;
+}
+
+input[type="radio"]:hover + label {
+  color: #007bff;
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
