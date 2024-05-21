@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Ejs</title>
+  </head>
+  <body>
+    <h1>Server Side Rendering using EJS</h1>
+    <form onsubmit="return validateForm()" method="post" action="/submit">
+      <label for="name">Name:- </label>
+      <input type="text" id="name" class="name" name="name" required /><br />
+
+      <label for="email">Email :-</label>
+      <input
+        type="email"
+        id="email"
+        class="email"
+        name="email"
+        required
+      /><br />
+
+      <label for="message">Message :-</label>
+      <textarea name="message" id="message" required></textarea><br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" /><br />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      ><br />
+
+      <label for="agree">I agree to the terms and conditions:</label>
+      <input type="checkbox" id="agree" name="agree" required /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        let phone = document.getElementById("phone").value;
+        let dob = document.getElementById("dob").value;
+        let gender = document.getElementById("gender").value;
+        let agree = document.getElementById("agree").checked;
+        if (
+          name === "" ||
+          email === "" ||
+          message === "" ||
+          phone === "" ||
+          dob === "" ||
+          gender === "" ||
+          !agree
+        ) {
+          alert("Please fill in all fields and agree to the terms.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
